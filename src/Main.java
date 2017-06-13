@@ -1,5 +1,6 @@
 import com.tingel.operations.Addition;
 import com.tingel.operations.Operation;
+import com.tingel.operations.OperationResponder;
 import com.tingel.operations.Subtraction;
 
 public class Main {
@@ -20,7 +21,8 @@ public class Main {
 	    Operation sub2 = new Subtraction();
 	    System.out.println("sub2; Expected FALSE: " + sub2.process(new int[]{7,5,2},1));
 	    
-	    
+	    System.out.println(OperationResponder.handleResponse("+"));
+	    System.out.println(OperationResponder.handleResponse("-"));
 	    
     }
 }
